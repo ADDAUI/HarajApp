@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		103B623BC658542785DFFC48 /* Pods_harajTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BAC04B5CD330D78736D60EF /* Pods_harajTest.framework */; };
 		3DC295B12328E3FF004ED0C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC295B02328E3FF004ED0C1 /* AppDelegate.swift */; };
 		3DC295B32328E3FF004ED0C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC295B22328E3FF004ED0C1 /* ViewController.swift */; };
 		3DC295B62328E3FF004ED0C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC295B42328E3FF004ED0C1 /* Main.storyboard */; };
 		3DC295B92328E3FF004ED0C1 /* harajTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DC295B72328E3FF004ED0C1 /* harajTest.xcdatamodeld */; };
 		3DC295BB2328E400004ED0C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC295BA2328E400004ED0C1 /* Assets.xcassets */; };
 		3DC295BE2328E400004ED0C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC295BC2328E400004ED0C1 /* LaunchScreen.storyboard */; };
+		3DC295C92328EA97004ED0C1 /* Posting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC295C82328EA97004ED0C1 /* Posting.swift */; };
+		3DC295CB2328F881004ED0C1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC295CA2328F881004ED0C1 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C999958ABE1C511A9867C10 /* Pods-harajTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-harajTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-harajTest/Pods-harajTest.release.xcconfig"; sourceTree = "<group>"; };
 		3DC295AD2328E3FF004ED0C1 /* harajTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = harajTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC295B02328E3FF004ED0C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DC295B22328E3FF004ED0C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		3DC295BA2328E400004ED0C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DC295BD2328E400004ED0C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DC295BF2328E400004ED0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC295C82328EA97004ED0C1 /* Posting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posting.swift; sourceTree = "<group>"; };
+		3DC295CA2328F881004ED0C1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7BAC04B5CD330D78736D60EF /* Pods_harajTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_harajTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE881FF99860F3B6EA8AC10 /* Pods-harajTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-harajTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-harajTest/Pods-harajTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				103B623BC658542785DFFC48 /* Pods_harajTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31933FB52B2DC9ABFD83D706 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CE881FF99860F3B6EA8AC10 /* Pods-harajTest.debug.xcconfig */,
+				2C999958ABE1C511A9867C10 /* Pods-harajTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3DC295A42328E3FF004ED0C1 = {
 			isa = PBXGroup;
 			children = (
 				3DC295AF2328E3FF004ED0C1 /* harajTest */,
 				3DC295AE2328E3FF004ED0C1 /* Products */,
+				31933FB52B2DC9ABFD83D706 /* Pods */,
+				8CAA96AA2185B9F7C43FD4C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +76,49 @@
 		3DC295AF2328E3FF004ED0C1 /* harajTest */ = {
 			isa = PBXGroup;
 			children = (
+				3DC295C72328EA44004ED0C1 /* Controllers */,
+				3DC295C62328EA38004ED0C1 /* Views */,
+				3DC295C52328EA28004ED0C1 /* Models */,
 				3DC295B02328E3FF004ED0C1 /* AppDelegate.swift */,
-				3DC295B22328E3FF004ED0C1 /* ViewController.swift */,
-				3DC295B42328E3FF004ED0C1 /* Main.storyboard */,
 				3DC295BA2328E400004ED0C1 /* Assets.xcassets */,
 				3DC295BC2328E400004ED0C1 /* LaunchScreen.storyboard */,
 				3DC295BF2328E400004ED0C1 /* Info.plist */,
 				3DC295B72328E3FF004ED0C1 /* harajTest.xcdatamodeld */,
 			);
 			path = harajTest;
+			sourceTree = "<group>";
+		};
+		3DC295C52328EA28004ED0C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3DC295C82328EA97004ED0C1 /* Posting.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3DC295C62328EA38004ED0C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3DC295B42328E3FF004ED0C1 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3DC295C72328EA44004ED0C1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3DC295B22328E3FF004ED0C1 /* ViewController.swift */,
+				3DC295CA2328F881004ED0C1 /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8CAA96AA2185B9F7C43FD4C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BAC04B5CD330D78736D60EF /* Pods_harajTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DC295C22328E400004ED0C1 /* Build configuration list for PBXNativeTarget "harajTest" */;
 			buildPhases = (
+				DBF6B4F43701D03B46345A8B /* [CP] Check Pods Manifest.lock */,
 				3DC295A92328E3FF004ED0C1 /* Sources */,
 				3DC295AA2328E3FF004ED0C1 /* Frameworks */,
 				3DC295AB2328E3FF004ED0C1 /* Resources */,
+				5F330C228A60AD9B91700A75 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +189,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5F330C228A60AD9B91700A75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-harajTest/Pods-harajTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-harajTest/Pods-harajTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBF6B4F43701D03B46345A8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-harajTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3DC295A92328E3FF004ED0C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DC295C92328EA97004ED0C1 /* Posting.swift in Sources */,
 				3DC295B32328E3FF004ED0C1 /* ViewController.swift in Sources */,
+				3DC295CB2328F881004ED0C1 /* DetailViewController.swift in Sources */,
 				3DC295B12328E3FF004ED0C1 /* AppDelegate.swift in Sources */,
 				3DC295B92328E3FF004ED0C1 /* harajTest.xcdatamodeld in Sources */,
 			);
@@ -284,6 +391,7 @@
 		};
 		3DC295C32328E400004ED0C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CE881FF99860F3B6EA8AC10 /* Pods-harajTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +410,7 @@
 		};
 		3DC295C42328E400004ED0C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C999958ABE1C511A9867C10 /* Pods-harajTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
